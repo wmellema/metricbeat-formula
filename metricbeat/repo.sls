@@ -13,7 +13,7 @@ setup metricbeat repo:
     - key_url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
     {$ if grains['os'] == 'CentOS' %}
     - humanname: Elastic repository for 7.x packages
-    -baseurl: https://artifacts.elastic.co/packages/7.x/yum
+    - baseurl: https://artifacts.elastic.co/packages/7.x/yum
     - gpgcheck: 1
   {% endif %}
     - gkgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
