@@ -14,7 +14,7 @@ elastic-7.x:
     - gpgcheck: 1
     - type: rpm-md
     - gpgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
-    {% if grains['os'] == "Debian" %}
+    {% elif grains['os'] == "Debian" %}
     - name: deb https://artifacts.elastic.co/packages/7.x/apt stable main
     - file: /etc/apt/sources.list.d/elasticsearch.list
     - key_url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
