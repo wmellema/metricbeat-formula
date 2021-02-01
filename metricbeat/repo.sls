@@ -4,4 +4,4 @@ elastic-7.x:
     - baseurl: https://artifacts.elastic.co/packages/7.x/yum
     - gpgcheck: 1
     - type: rpm-md
-    - gkgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    - gpgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
