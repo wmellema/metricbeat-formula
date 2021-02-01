@@ -1,4 +1,4 @@
-{% if grans['os'] == 'Debian' %}
+{% if grains['os'] == 'Debian' %}
 ensure apt can handle https transport for metricbeat:
   pkg.installed:
     - name: apt-transport-https
